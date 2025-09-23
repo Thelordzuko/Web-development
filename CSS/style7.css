@@ -1,0 +1,111 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 25px 20px;
+    border: 20px;
+}
+
+.navs {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.fa-computer{
+    color: rgb(126, 83, 19);
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bodys{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.right{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 350px;
+    background-color:rgb(126, 83, 19);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.sections{
+    padding: 20px 20px;
+    border: none;
+    background-color: whitesmoke;
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ac{
+    background-color: whitesmoke;
+    padding: 15px 60px;
+    border-radius: 16px;
+    width: 130px;
+    height: 200px;
+}
+
+.pe{
+    background-color: whitesmoke;
+    padding: 15px 60px;
+    border-radius: 16px;
+    width: 130px;
+    height: 200px;
+}
+
+.ap{
+    background-color: whitesmoke;
+    padding: 15px 60px;
+    border-radius: 16px;
+    width: 130px;
+    height: 200px;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+footer{
+    background-color: whitesmoke;
+    position: sticky;
+    bottom: 0;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 100px;
+}
