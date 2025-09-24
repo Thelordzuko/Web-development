@@ -11,7 +11,7 @@ function weatherAdvice(temperature, isRaining) {
         console.log("It's hot, stay hydrated!");
     }
     
-advice = isRaining ? "Bring an umbrella" : "No umbrella needed"
+let advice = isRaining ? "Bring an umbrella" : "No umbrella needed"
 console.log(advice)
 }
 
