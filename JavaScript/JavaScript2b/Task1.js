@@ -1,28 +1,48 @@
-function isStrongPassword(password){
-    if (password.length >= 8 && (password.includes(0) || password.includes(1) || password.includes(2) || password.includes(3) || password.includes(4) || password.includes(5) || password.includes(6) || password.includes(7) || password.includes(8) || password.includes(9)) && (password.includes(".") || password.includes(",") || password.includes("!") || password.includes("#") || password.includes("&") || password.includes("@") || password.includes("*"))){
-        console.log("Password accepted. You can proceed!");
-        
-    } 
-    else {
-    if (password.length < 8){
-        console.log("Password must contain at least 8 characters")
-    } else if((!password.includes(0) && !password.includes(1) && !password.includes(2) && !password.includes(3) && !password.includes(4) && !password.includes(5) && !password.includes(6) && !password.includes(7) && !password.includes(8) && !password.includes(9))){
-        console.log("Password must contain a number!!!")
-    } 
-    else if((!password.includes(".") && !password.includes(",") && !password.includes("!") && !password.includes("#") && !password.includes("&") && password.includes("@") && password.includes("*"))){
-        console.log("Password must contain a special character!!!")
-    
-    } 
-     else {console.log("Weak password!!!. Password must have at least 8 characters, a number and a special character.")}
-    }  
-} 
+function isStrongPassword(password) {
+    const hasLength = password.length >= 8;
+    const hasNumber = /[123456789]/.test(password);
+    const hasSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
-isStrongPassword("Thefirelordzuko1.")
+    if (hasLength === false) {
+        return "Password must be at least 8 characters";
+    } else if (hasNumber === false) {
+        return "Password must have at least a number"
+    } else if (hasSpecial === false) {
+        return "Password should have at least a special character"
+    } else {
+        return "Password created successfully"
+    }
+}
+console.log('');
+console.log(isStrongPassword('somorin@1'))
 
+// 2
 function formatPercentage(value) {
-    console.log(`${value.toFixed(1)}%`)
+    return `${value.toFixed(1)}%`
 }
+console.log(formatPercentage(75))
 
+// 3
 function calculateCompoundInterest(principal, rate, years) {
-    console.log(`Amount: ${principal * (1 + rate / 100) ** years}`)
+    let A = principal * (1 + rate)**years
+    return `${A.toFixed(2)}`
 }
+console.log(calculateCompoundInterest(50000, 0.08, 3));
+
+// 4
+function canGraduate(credits, gpa) {
+    if (credits >= 120 && gpa >= 2.0) {
+        return "You can graduate"
+    } else {
+        return "You cannot graduate due to low Credits or GPA"
+    }
+}
+console.log(canGraduate(150, 3.0))
+
+// 5
+function reverseWords(sentence) {
+    let words = sentence.split(" ")
+    let sentences = words.reverse()
+    return sentences
+}
+console.log(reverseWords('I love python'))
