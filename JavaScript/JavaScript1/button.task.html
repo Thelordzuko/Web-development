@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="button.task.js" defer></script>
+    <style>
+        .buttons{
+            display: flex;
+            background-color: bisque;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #aboutb{
+            background-color: brown;
+            color: white;
+            border-radius: 8%;
+            padding: 15px 15px;
+        }
+
+        #contactsb{
+            background-color: brown;
+            color: white;
+            border-radius: 8%;
+            padding: 15px 15px;
+        }
+
+        #skillsb{
+            background-color: brown;
+            color: white;
+            border-radius: 8%;
+            padding: 15px 15px;
+        }
+
+        #about_cont{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #contact_cont{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #skills_cont{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="buttons">
+            <button id="aboutb">
+                About me
+            </button>
+
+            <button id="contactsb">
+                My contacts
+            </button>
+            
+            <button id="skillsb">
+                My skills
+            </button>
+        </div>
+
+        <div class="content">
+            <div id="about_cont">
+                <p>My name is Oluwaseyi Alebisu.</p>
+                <p>I am from Lagos State</p>
+                <p>I am an AI developer</p>
+            </div>
+
+            <div id="contact_cont">
+                <p>Dad - 08036778888</p>
+                <p>Mom - 08155664499</p> 
+                <p>Sis - 09177662828</p> 
+            </div>
+            
+            <div id="skills_cont">
+                <p>Swimming</p>
+                <p>Driving</p>
+                <p>Cooking</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

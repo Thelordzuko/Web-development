@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+
+body{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.firstNumber{
+    background-color: rgb(200, 254, 254);
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-left: 3px solid;
+
+}
+
+.secondNumber{
+    background-color: rgb(200, 254, 254);
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-left: 3px solid;
+}
+
+.arithmetic{
+    background-color: whitesmoke;
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.equal{
+    background-color: whitesmoke;
+    border: 1px solid;
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.answer{
+    background-color: rgb(221, 255, 171);
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-left: 3px solid;
+
+}
+
+.main{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(238, 244, 241);
+    border-radius: 20px;
+}
