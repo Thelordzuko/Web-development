@@ -1,0 +1,17 @@
+.main{
+    background-color: blue;
+}
+
+#cnt1, #cnt2{
+    display: none;
+}
+
+#cnt1{
+    display: flex;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
