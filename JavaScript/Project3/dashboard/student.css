@@ -35,6 +35,7 @@ button{
     border: none;
     justify-content: left;
     display: flex;
+    gap: 10px;
 }
 
 .dash{

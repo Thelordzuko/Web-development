@@ -35,6 +35,7 @@ button{
     border: none;
     justify-content: left;
     display: flex;
+     gap: 10px;
 }
 
 .course{
@@ -110,8 +111,8 @@ h3{
 }
 
 .cards{
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
+    gap: 30px;
 }
 
 p{
@@ -132,9 +133,6 @@ p{
     display: flex;
     justify-content: space-between;
 }
-
-
-
 
 .card{
     display: flex;

@@ -1,0 +1,81 @@
+/* Basic styling for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #f4f6f8;
+}
+
+/* Centered title */
+h1 {
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Search bar */
+#search {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 8px;
+    width: 60%;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Student image size */
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Performance colors */
+.excellent {
+    background: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+.good {
+    background: #fff3cd;
+    color: #856404;
+    font-weight: bold;
+}
+.needs-help {
+    background: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
