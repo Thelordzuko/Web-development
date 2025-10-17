@@ -1,16 +1,24 @@
-/* Basic styling for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
     background: #f4f6f8;
 }
 
-/* Centered title */
 h1 {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    padding-bottom: 20px
 }
 
-/* Form styling */
+
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +33,6 @@ form input, button {
     border-radius: 5px;
 }
 
-/* Search bar */
 #search {
     display: block;
     margin: 0 auto 20px auto;
@@ -33,7 +40,17 @@ form input, button {
     width: 60%;
 }
 
-/* Table styling */
+.addbtn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.add{
+    background-color: #856404;
+    color: whitesmoke;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -46,14 +63,13 @@ th, td {
     text-align: center;
 }
 
-/* Student image size */
 img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-/* Performance colors */
 .excellent {
     background: #d4edda;
     color: #155724;
@@ -64,14 +80,13 @@ img {
     color: #856404;
     font-weight: bold;
 }
-.needs-help {
+.help {
     background: #f8d7da;
     color: #721c24;
     font-weight: bold;
 }
 
-/* Delete button */
-.delete-btn {
+.delete {
     background: #e74c3c;
     color: white;
     border: none;
@@ -79,3 +94,10 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (min-width: 320px){
+    .h1 {
+   padding-bottom: 10px;
+    width: 100px;
+}
+    }
